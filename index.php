@@ -70,19 +70,19 @@
           <div class="row">
               <div class="small-12 columns">
                   <label>Model Name</label>
-                  <input type="text" id="modelName" />
+                  <select id="modelName"><option id="0">None Selected</option></select>
               </div>
           </div>
           <div class="row">
               <div class="small-12 columns">
                   <label>Designer Name</label>
-                  <input type="text" id="designerName" />
+                  <select id="designerName"></select>
               </div>
           </div>
           <div class="row">
               <div class="small-12 columns">
                   <label>Source Publication</label>
-                  <input type="text" id="source" />
+                  <select id="sourceName"></select>
               </div>
           </div>
               </fieldset>

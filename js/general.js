@@ -1,6 +1,4 @@
 // library of generally used functions
-
-var undefined;
 	
 window.commandQueue = [];
 
@@ -142,9 +140,7 @@ for (var i = 0; i < node.childNodes.length; i++) {
 	
 	function killChildren(node) {
 		if (node !== null) {
-			while(node.hasChildNodes()) {
-				node.removeChild(node.firstChild);
-			}
+            $(node).children().remove();
 		}
 
 		return true;
@@ -171,7 +167,7 @@ for (var i = 0; i < node.childNodes.length; i++) {
 			workOption.value = 0;
 			workOption.text = zeroDesc;
 		
-			selectBox.appendChild(workOption);
+			$(selectBox).append(workOption);
 		}
 		
 		for (var i = 0; i < data.length; i++) {
@@ -188,7 +184,7 @@ for (var i = 0; i < node.childNodes.length; i++) {
 				workOption.value = id;
 				workOption.text = desc;
 		
-				selectBox.appendChild(workOption);
+				$(selectBox).append(workOption);
 			}
 		}
 		
@@ -495,3 +491,27 @@ for (var i = 0; i < node.childNodes.length; i++) {
 		
 		return true;
 	}
+
+        String.prototype.trim = function() {
+                return this.replace(/^\s+|\s+$/g, "");
+        };
+
+        String.prototype.ltrim = function() {
+                return this.replace(/^\s+/, "");
+        };
+
+        String.prototype.rtrim = function() {
+                return this.replace(/\s+$/, "");
+        };
+
+        String.prototype.replaceAll = function(find, replace) {
+                var text = this;
+                var index = text.indexOf(find);
+
+                while (index != -1) {
+                        text = text.replace(find, replace);
+                        index = text.indexOf(find);
+                }
+
+                return text;
+        };
