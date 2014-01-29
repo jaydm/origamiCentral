@@ -12,6 +12,11 @@
     <script src="js/index.js"></script>
   </head>
   <body>
-    <?php echo '<p>Hello Origami Central!</p>'; ?>
+    <p>Welcome to the new Origami Central!</p>
+    <p>This site has always tried to be the cleanest possible interface
+    to get you the information that you need in order to find origami
+    diagrams either in publications or on the web.</p>
+    <p>For a very long time, the database had no updates (either to its
+    appearance or its contents) that is changing now!</p>
   </body>
 </html>
