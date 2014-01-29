@@ -38,8 +38,4 @@ function fillSources(xmlDoc, status, eventObject) {
 
 $(function() {
     $(document).foundation();
-    
-    loadModels();
-    loadDesigners();
-    loadSources();
 });

@@ -50,7 +50,6 @@
      <div id="body" class="asRow">
          <div class="leftColumn">
       <h4>Welcome to OrigamiCentral</h4>
-      <h5>The Origami Model Diagram Database</h5>
       <p>Here you will find easy to use searches to help you in your search for origami
           model diagrams in print and online.  Hopefully, you will find this utility
           helpful and easy to use.  If you have any suggestions on how this might be
@@ -66,6 +65,7 @@
       <p>Basic access of the database is fairly straightforward.  Just use the search
           forms below to search with as little or as much specificity as you like.</p>
       <form>
+          <a name="jumpin"></a>
           <fieldset>
               <label>Quick Search</label>
           <div class="row">
