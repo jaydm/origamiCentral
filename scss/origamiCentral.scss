@@ -1,40 +1,177 @@
 @import "settings";
 @import "foundation";
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switch",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+body {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	
+	font-size: 100%;
+}
+
+nav {
+	flex: auto;
+}
+
+.logo {
+   height: $topbar-height;
+   border: none;
+}
+
+.asRow {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	
+	justify-content: flex-start;
+	-webkit-justify-content: -webkit-flex-start;
+	-moz-justify-content: -moz-flex-start;
+	-ms-justify-content: -ms-flex-start;
+	
+	align-content: flex-start;
+	-webkit-align-content: -webkit-flex-start;
+	-moz-align-content: -moz-flex-start;
+	-ms-align-content: -ms-flex-start;
+	
+	align-items: flex-start;
+	-webkit-align-items: -webkit-flex-start;
+	-moz-align-items: -moz-flex-start;
+	-ms-align-items: -ms-flex-start;
+}
+
+.asCol {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	
+	justify-content: flex-start;
+	-moz-justify-content: -moz-flex-start;
+	-ms-justify-content: -ms-flex-start;
+	
+	align-content: flex-start;
+	-moz-align-content: -moz-flex-start;
+	-ms-align-content: -ms-flex-start;
+	
+	align-items: flex-start;
+	-moz-align-items: -moz-flex-start;
+	-ms-align-items: -ms-flex-start;
+}
+
+.leftColumn {
+	width: 95%;
+	
+	form {
+		width: 100%;
+	}
+}
+
+.rightColumn {
+	width: 95%;
+	
+	margin-top: 1rem;
+	
+	form {
+		width: 100%;
+	}
+}
+
+@media (min-width: 800px) {
+	.leftColumn {
+		width: 45%;
+		margin-top: 0;
+		
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+	
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+	
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+	
+		justify-content: flex-start;
+		-webkit-justify-content: -webkit-flex-start;
+		-moz-justify-content: -moz-flex-start;
+		-ms-justify-content: -ms-flex-start;
+	
+		align-content: flex-start;
+		-webkit-align-content: -webkit-flex-start;
+		-moz-align-content: -moz-flex-start;
+		-ms-align-content: -ms-flex-start;
+	
+		align-items: flex-start;
+		-webkit-align-items: -webkit-flex-start;
+		-moz-align-items: -moz-flex-start;
+		-ms-align-items: -ms-flex-start;
+	}
+	
+	.rightColumn {
+		width: 45%;
+		margin-top: 0;
+		
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+	
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+	
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+	
+		justify-content: flex-start;
+		-webkit-justify-content: -webkit-flex-start;
+		-moz-justify-content: -moz-flex-start;
+		-ms-justify-content: -ms-flex-start;
+	
+		align-content: flex-start;
+		-webkit-align-content: -webkit-flex-start;
+		-moz-align-content: -moz-flex-start;
+		-ms-align-content: -ms-flex-start;
+	
+		align-items: flex-start;
+		-webkit-align-items: -webkit-flex-start;
+		-moz-align-items: -moz-flex-start;
+		-ms-align-items: -ms-flex-start;
+	}
+}
+
+#header {
+	width: 100%;
+}
+
+#body {
+	width: 100%;
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
