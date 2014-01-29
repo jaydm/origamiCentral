@@ -46,13 +46,14 @@
 				</section>
 			</nav>
       </div>
-     <div class="leftColumn">
+     <div id="body" class="asRow">
+         <div class="leftColumn">
       <h4>Welcome to OrigamiCentral</h4>
       <h5>The Origami Model Diagram Database</h5>
       <p>Here you will find easy to use searches to help you in your search for origami
           model diagrams in print and online.  Hopefully, you will find this utility
           helpful and easy to use.  If you have any suggestions on how this might be
-          improved you can contact me on Google+ at: https://www.google.com/+JayMcHugh</p>
+          improved you can contact me on <a href="https://www.google.com/+JayMcHugh">Google+</a>.</p>
       <p>If you have already used the database or would like to just jump in,
           <a href="#jumpin">Click here to start</a> or keep reading.</p>
       <p>Even though there are several sites on the web that help you to search for
@@ -64,6 +65,8 @@
       <p>Basic access of the database is fairly straightforward.  Just use the search
           forms below to search with as little or as much specificity as you like.</p>
       <form>
+          <fieldset>
+              <label>Quick Search</label>
           <div class="row">
               <div class="small-12 columns">
                   <label>Model Name</label>
@@ -82,9 +85,12 @@
                   <input type="text" id="source" />
               </div>
           </div>
+              </fieldset>
       </form>
          </div>
-     <div class="rightColumn">
+     <div class="rightColumn panel">
+         <label>Search Results</label>
      </div>
+         </div>
   </body>
 </html>
