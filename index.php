@@ -12,9 +12,10 @@
     <script src="js/index.js"></script>
   </head>
  <body class="asCol">
-		<div id="header" class="asRow">
-          <img src="images/origami_crane.jpg" class="logo" />
-          <nav class="top-bar" data-topbar>
+     <?php include_once("analyticstracking.php"); ?>
+     <div id="header" class="asRow">
+         <img src="images/origami_crane.jpg" class="logo" />
+         <nav class="top-bar" data-topbar>
 				<ul class="title-area">
 					<!-- Title Area -->
 					<li class="name"> </li>
@@ -68,21 +69,33 @@
           <fieldset>
               <label>Quick Search</label>
           <div class="row">
-              <div class="small-12 columns">
+              <div class="small-8 columns">
                   <label>Model Name</label>
                   <select id="modelName"><option id="0">None Selected</option></select>
               </div>
-          </div>
-          <div class="row">
-              <div class="small-12 columns">
-                  <label>Designer Name</label>
-                  <select id="designerName"></select>
+              <div class="small-4 columns">
+                    <label>&nbsp;</label>
+                  <input type="button" id="searchModels" value="Search Model Names" />
               </div>
           </div>
           <div class="row">
-              <div class="small-12 columns">
+              <div class="small-8 columns">
+                  <label>Designer Name</label>
+                  <select id="designerName"></select>
+              </div>
+              <div class="small-4 columns">
+                  <label>&nbsp;</label>
+                  <input type="button" id="searchDesigners" value="Search Designers" />
+              </div>
+          </div>
+          <div class="row">
+              <div class="small-8 columns">
                   <label>Source Publication</label>
                   <select id="sourceName"></select>
+              </div>
+              <div class="small-4 columns">
+                  <label>&nbsp;</label>
+                  <input type="button" id="searchSources" value="Search Publications" />
               </div>
           </div>
               </fieldset>

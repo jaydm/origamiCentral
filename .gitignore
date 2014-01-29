@@ -5,3 +5,4 @@
 /include/mysql.credentials.inc
 /xml/*
 pushToServer
+analyticstracking.php
