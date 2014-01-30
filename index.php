@@ -26,13 +26,6 @@
                  <ul class="left">
                      <li class="has-dropdown"><a href="#">Origami Central</a>
                          <ul class="dropdown">
-                             <li><label>Main Menu</label></li>
-                             <li class="has-dropdown"><a href="#">Home</a>
-                                 <ul class="dropdown">
-                                     <li><label>Home Page</label></li>
-                                     <li><a href="/" rel="external" target="ocHome">Return to home page</a></li>
-                                 </ul>
-                             </li>
                              <li class="has-dropdown"><a href="#">Searching</a>
                                  <ul class="dropdown">
                                      <li><label>Searching the database</label></li>
@@ -62,7 +55,7 @@
                  diagrams - we are hoping to make this the easiest to use and most complete
                  resource for finding them.  If you own a book or website that is not already
                  in the database, let me know and I will get it added to the database.  For
-                 developers, there is also an API to allow you to connect to the database on
+                 developers, there will also an API (not available yet) to allow you to connect to the database on
                  your web pages (as long as you credit OrigamiCentral as powering your site).</p>
              
              <p>Basic access of the database is fairly straightforward.  Just use the search
@@ -98,7 +91,6 @@
              </form>
          </div>
          <div class="rightColumn panel">
-             <label>Search Results</label>
              <div id="searchResults"></div>
          </div>
      </div>
