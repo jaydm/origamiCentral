@@ -4,4 +4,8 @@ $(function() {
     $(document).foundation();
     
     $("#searchModels").click(quickSearchModels);
+    
+    if ($("#designerName").val() != '') {
+        quickSearchModels();
+    }
 });
