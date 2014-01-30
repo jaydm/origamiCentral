@@ -1,7 +1,7 @@
 // javascript file for home page
 
 function loadModels() {
-   var posting = $.post("/new/xml/modelSelect.php");
+   var posting = $.post("/xml/modelSelect.php");
     
     posting.done(fillModels);
 }
@@ -13,7 +13,7 @@ function fillModels(xmlDoc, status, eventObject) {
 }
 
 function loadDesigners() {
-   var posting = $.post("/new/xml/designerSelect.php");
+   var posting = $.post("/xml/designerSelect.php");
     
     posting.done(fillDesigners);
 }
@@ -25,7 +25,7 @@ function fillDesigners(xmlDoc, status, eventObject) {
 }
 
 function loadSources() {
-   var posting = $.post("/new/xml/sourceSelect.php");
+   var posting = $.post("/xml/sourceSelect.php");
     
     posting.done(fillSources);
 }
@@ -42,7 +42,7 @@ function quickSearchModels() {
         designerName: $("#designerName").val(),
         sourceName: $("#sourceName").val()};
         
-    var posting = $.post("/new/xml/modelSearch.php", data);
+    var posting = $.post("/xml/modelSearch.php", data);
     
     posting.done(fillSearchResults);
 }
@@ -53,7 +53,7 @@ function quickSearchDesigners() {
         designerName: $("#designerName").val(),
         sourceName: $("#sourceName").val()};
         
-    var posting = $.post("/new/xml/designerSearch.php", data);
+    var posting = $.post("/xml/designerSearch.php", data);
     
     posting.done(fillSearchResults);
 }
@@ -64,7 +64,7 @@ function quickSearchSources() {
         designerName: $("#designerName").val(),
         sourceName: $("#sourceName").val()};
         
-    var posting = $.post("/new/xml/sourceSearch.php", data);
+    var posting = $.post("/xml/sourceSearch.php", data);
     
     posting.done(fillSearchResults);
 }
