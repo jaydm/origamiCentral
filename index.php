@@ -16,94 +16,91 @@
      <div id="header" class="asRow">
          <img src="images/origami_crane.jpg" class="logo" />
          <nav class="top-bar" data-topbar>
-				<ul class="title-area">
-					<!-- Title Area -->
-					<li class="name"> </li>
-					
-					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-					<li class="toggle-topbar menu-icon"><a href="">Menu</a></li>
-				</ul>
-				<section class="top-bar-section">
-					<ul class="left">
-						<li class="has-dropdown"><a href="#">Origami Central</a>
-							<ul class="dropdown">
-								<li><label>Main Menu</label></li>
-								<li class="has-dropdown"><a href="#">Home</a>						
-									<ul class="dropdown">
-										<li><label>Home Page</label></li>
-										<li><a href="./pto/requests.jsp" rel="external" target="_blank">Return to home page</a></li>
-									</ul>
-								</li>
-								<li class="has-dropdown"><a href="#">Searching</a>
-									<ul class="dropdown">
-										<li><label>Searching the database</label></li>
-										<li><a href="./pto/departments.jsp" rel="external" target="_blank" class="hidden administration">Search by model name</a></li>
-										<li><a href="./pto/employees.jsp" rel="external" target="_blank">Search by Designer</a></li>
-										<li><a href="./pto/calendars.jsp" rel="external" target="_blank" class="hidden administration">Search by publication</a></li>									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-			</nav>
-      </div>
+             <ul class="title-area">
+                 <li class="name"> </li>
+                 
+                 <li class="toggle-topbar menu-icon"><a href=""></a></li>
+             </ul>
+             
+             <section class="top-bar-section">
+                 <ul class="left">
+                     <li class="has-dropdown"><a href="#">Origami Central</a>
+                         <ul class="dropdown">
+                             <li><label>Main Menu</label></li>
+                             <li class="has-dropdown"><a href="#">Home</a>
+                                 <ul class="dropdown">
+                                     <li><label>Home Page</label></li>
+                                     <li><a href="/" rel="external" target="ocHome">Return to home page</a></li>
+                                 </ul>
+                             </li>
+                             <li class="has-dropdown"><a href="#">Searching</a>
+                                 <ul class="dropdown">
+                                     <li><label>Searching the database</label></li>
+                                     <li><a href="searchModels.php" rel="external" target="ocModels">Search by model name</a></li>
+                                     <li><a href="searchDesigners.php" rel="external" target="ocDesigners">Search by designer</a></li>
+                                     <li><a href="searchPublications.php" rel="external" target="ocSources">Search by publication</a></li>									</ul>
+                             </li>
+                         </ul>
+                     </li>
+                 </ul>
+             </section>
+         </nav>
+     </div>
+     
      <div id="body" class="asRow">
          <div class="leftColumn">
-      <h4>Welcome to OrigamiCentral</h4>
-      <p>Here you will find easy to use searches to help you in your search for origami
-          model diagrams in print and online.  Hopefully, you will find this utility
-          helpful and easy to use.  If you have any suggestions on how this might be
-          improved you can contact me on <a href="https://www.google.com/+JayMcHugh">Google+</a>.</p>
-      <p>If you have already used the database or would like to just jump in,
-          <a href="#jumpin">Click here to start</a> or keep reading.</p>
-      <p>Even though there are several sites on the web that help you to search for
-          diagrams - we are hoping to make this the easiest to use and most complete
-          resource for finding them.  If you own a book or website that is not already
-          in the database, let me know and I will get it added to the database.  For
-          developers, there is also an API to allow you to connect to the database on
-          your web pages (as long as you credit OrigamiCentral as powering your site).</p>
-      <p>Basic access of the database is fairly straightforward.  Just use the search
-          forms below to search with as little or as much specificity as you like.</p>
-      <form>
-          <a name="jumpin"></a>
-          <fieldset>
-              <label>Quick Search</label>
-          <div class="row">
-              <div class="small-8 columns">
-                  <label>Model Name</label>
-                  <select id="modelName"><option id="0">None Selected</option></select>
-              </div>
-              <div class="small-4 columns">
-                    <label>&nbsp;</label>
-                  <input type="button" id="searchModels" value="Search Model Names" />
-              </div>
-          </div>
-          <div class="row">
-              <div class="small-8 columns">
-                  <label>Designer Name</label>
-                  <select id="designerName"></select>
-              </div>
-              <div class="small-4 columns">
-                  <label>&nbsp;</label>
-                  <input type="button" id="searchDesigners" value="Search Designers" />
-              </div>
-          </div>
-          <div class="row">
-              <div class="small-8 columns">
-                  <label>Source Publication</label>
-                  <select id="sourceName"></select>
-              </div>
-              <div class="small-4 columns">
-                  <label>&nbsp;</label>
-                  <input type="button" id="searchSources" value="Search Publications" />
-              </div>
-          </div>
-              </fieldset>
-      </form>
+             <h4>Welcome to OrigamiCentral</h4>
+             <p>Here you will find easy to use searches to help you in your search for origami
+                 model diagrams in print and online.  Hopefully, you will find this utility
+                 helpful and easy to use.  If you have any suggestions on how this might be
+                 improved you can contact me on <a href="https://www.google.com/+JayMcHugh">Google+</a>.</p>
+             
+             <p>If you have already used the database or would like to just jump in,
+                 <a href="#jumpin">Click here to start</a> or keep reading.</p>
+             
+             <p>Even though there are several sites on the web that help you to search for
+                 diagrams - we are hoping to make this the easiest to use and most complete
+                 resource for finding them.  If you own a book or website that is not already
+                 in the database, let me know and I will get it added to the database.  For
+                 developers, there is also an API to allow you to connect to the database on
+                 your web pages (as long as you credit OrigamiCentral as powering your site).</p>
+             
+             <p>Basic access of the database is fairly straightforward.  Just use the search
+                 forms below to search with as little or as much specificity as you like.</p>
+             
+             <form>
+                 <a name="jumpin"></a>
+                 <fieldset>
+                     <label>Quick Search</label>
+                     <div class="row">
+                         <div class="small-8 columns">
+                             <label>Model Name</label>
+                             <input type="text" id="modelName" />
+                         </div>
+                         <div class="small-4 columns">
+                             <label>&nbsp;</label>
+                             <input type="button" id="searchModels" value="Search" />
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="small-8 columns">
+                             <label>Designer Name</label>
+                             <input type="text" id="designerName" />
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="small-8 columns">
+                             <label>Source Publication</label>
+                             <input type="text" id="sourceName" />
+                         </div>
+                     </div>
+                 </fieldset>
+             </form>
          </div>
-     <div class="rightColumn panel">
-         <label>Search Results</label>
+         <div class="rightColumn panel">
+             <label>Search Results</label>
+             <div id="searchResults"></div>
+         </div>
      </div>
-         </div>
   </body>
 </html>
