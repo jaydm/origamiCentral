@@ -26,12 +26,12 @@
                  <ul class="left">
                      <li class="has-dropdown"><a href="#">Origami Central</a>
                          <ul class="dropdown">
-                             <li class="has-dropdown"><a href="#">Searching</a>
+                             <li class="has-dropdown hide"><a href="#">Searching</a>
                                  <ul class="dropdown">
-                                     <li><label>Searching the database</label></li>
-                                     <li><a href="searchModels.php" rel="external" target="ocModels">Search by model name</a></li>
-                                     <li><a href="searchDesigners.php" rel="external" target="ocDesigners">Search by designer</a></li>
-                                     <li><a href="searchPublications.php" rel="external" target="ocSources">Search by publication</a></li>									</ul>
+                                     <li class="hide"><label>Searching the database</label></li>
+                                     <li class="hide"><a href="searchModels.php" rel="external" target="ocModels">Search by model name</a></li>
+                                     <li class="hide"><a href="searchDesigners.php" rel="external" target="ocDesigners">Search by designer</a></li>
+                                     <li class="hide"><a href="searchPublications.php" rel="external" target="ocSources">Search by publication</a></li>									</ul>
                              </li>
                          </ul>
                      </li>
