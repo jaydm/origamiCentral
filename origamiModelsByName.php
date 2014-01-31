@@ -44,6 +44,9 @@
          </div>
          <div class="rightColumn panel">
              <div id="searchResults"></div>
+             <div class="googleAd">
+<?php include_once("origamiCentral.largeRectAd.php"); ?>
+             </div>
          </div>
      </div>
   </body>
