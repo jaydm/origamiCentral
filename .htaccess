@@ -1,0 +1,27 @@
+# redirect index-<x>.php to index.php
+Redirect /index-a.php http://origamicentral.org/index.php
+Redirect /index-b.php http://origamicentral.org/index.php
+Redirect /index-c.php http://origamicentral.org/index.php
+Redirect /index-d.php http://origamicentral.org/index.php
+Redirect /index-e.php http://origamicentral.org/index.php
+Redirect /index-f.php http://origamicentral.org/index.php
+Redirect /index-g.php http://origamicentral.org/index.php
+Redirect /index-h.php http://origamicentral.org/index.php
+Redirect /index-i.php http://origamicentral.org/index.php
+Redirect /index-j.php http://origamicentral.org/index.php
+Redirect /index-k.php http://origamicentral.org/index.php
+Redirect /index-l.php http://origamicentral.org/index.php
+Redirect /index-m.php http://origamicentral.org/index.php
+Redirect /index-n.php http://origamicentral.org/index.php
+Redirect /index-o.php http://origamicentral.org/index.php
+Redirect /index-p.php http://origamicentral.org/index.php
+Redirect /index-q.php http://origamicentral.org/index.php
+Redirect /index-r.php http://origamicentral.org/index.php
+Redirect /index-s.php http://origamicentral.org/index.php
+Redirect /index-t.php http://origamicentral.org/index.php
+Redirect /index-u.php http://origamicentral.org/index.php
+Redirect /index-v.php http://origamicentral.org/index.php
+Redirect /index-w.php http://origamicentral.org/index.php
+Redirect /index-x.php http://origamicentral.org/index.php
+Redirect /index-y.php http://origamicentral.org/index.php
+Redirect /index-z.php http://origamicentral.org/index.php
