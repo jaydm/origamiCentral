@@ -1,5 +1,5 @@
      <div id="header" class="asRow">
-         <img src="images/origami_crane.jpg" class="logo" />
+         <a href="http://origamicentral.org"><img src="images/origami_crane.jpg" class="logo" /></a>
          <nav class="top-bar" data-topbar>
              <ul class="title-area">
                  <li class="name"> </li>
