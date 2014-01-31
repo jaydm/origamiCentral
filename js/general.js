@@ -538,6 +538,8 @@ function fillSearchResults(xmlDoc, status, eventObject) {
     var designerID;
     var designerName;
     
+    var sourceLink;
+    
     var ul = baseUL.cloneNode(false);
     
     for (var i = 0; i < sources.length; i++) {
@@ -554,9 +556,17 @@ function fillSearchResults(xmlDoc, status, eventObject) {
         var sourceItem = baseLI.cloneNode(false);
         
         sourceItem.sourceID = sourceID;
-        sourceItem.appendChild(document.createTextNode(sourceTitle));
+        
+        sourceLink = baseA.cloneNode(false);
+        sourceLink.href = "http://origamicentral.org/origamiModelsBySource.php?sourceName=" + sourceTitle;
+        sourceLink.appendChild(document.createTextNode(sourceTitle));
+                               
+        sourceItem.appendChild(sourceLink);
         
         ul.appendChild(sourceItem);
+        
+        var modelLink;
+        var designerLink;
         
         for (var j = 0; j < models.length; j++) {
             var model = models[j];
@@ -572,7 +582,12 @@ function fillSearchResults(xmlDoc, status, eventObject) {
             
             var modelList = baseUL.cloneNode(false);
             
-            modelList.appendChild(document.createTextNode(modelName));
+            modelLink = baseA.cloneNode(false);
+            
+            modelLink.href = "http://origamicentral.org/origamiModelsByName.php?modelName=" + modelName;
+            modelLink.appendChild(document.createTextNode(modelName));
+            
+            modelList.appendChild(modelLink);
             
             var modelItem;
             
@@ -581,7 +596,14 @@ function fillSearchResults(xmlDoc, status, eventObject) {
             modelList.appendChild(modelItem);
             
             modelItem = baseLI.cloneNode(false);
-            modelItem.appendChild(document.createTextNode('Designer: ' + designerName));
+            
+            designerLink = baseA.cloneNode(false);
+            
+            designerLink.href = "http://origamicentral.org/origamiModelsByDesigner.php?designerName=" + designerName;
+            designerLink.appendChild(document.createTextNode(designerName));
+            
+            modelItem.appendChild(document.createTextNode('Designer: '));
+            modelItem.appendChild(designerLink);
             modelList.appendChild(modelItem);
             
             modelItem = baseLI.cloneNode(false);

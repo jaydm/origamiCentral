@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Origami Central - Search Models by Name</title>
+    <title>Origami Central - Search Models by Source</title>
     <link rel="stylesheet" href="stylesheets/origamiCentral.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/jquery/jquery.js"></script>
@@ -24,7 +24,7 @@
      
      <div id="body" class="asRow">
          <div class="leftColumn">
-             <h4>Searching by Model Name</h4>
+             <h4>Searching by Source Title</h4>
 
              <form>
                  <fieldset>
