@@ -34,7 +34,8 @@
                  your web pages (as long as you credit OrigamiCentral as powering your site).</p>
              
              <p>Basic access of the database is fairly straightforward.  Just use the search
-                 forms below to search with as little or as much specificity as you like.</p>
+                 forms below to search using the either the model name, designer name, or source title
+                 (only the first one that you fill in will be used).</p>
              
              <form>
                  <a name="jumpin"></a>
