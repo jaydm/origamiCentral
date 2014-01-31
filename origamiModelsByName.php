@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Origami Central - Search Models by Name</title>
     <link rel="stylesheet" href="stylesheets/origamiCentral.css" />
+    <link rel="canonical" href="http://origamicentral.org/origamiModelsByName.php" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
